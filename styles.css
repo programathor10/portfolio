@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+/* Reset básico */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #1f2937;
+    color: #f9faf8;
+}
+
+/* Header */
+header {
+    background-color: #4b70a3;
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    font-size: 24px;
+    color: #f9faf8;
+    font-weight: 900;
+}
+
+nav ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+nav a {
+    color: #e5e7eb;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    padding: 3rem;
+    gap: 2rem;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 0.5rem;
+}
+
+.hero-text p {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.hero-image img{
+    max-width: 1000px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.hero-image{
+    text-align: center;
+}
+
+.proyects {
+    padding: 2rem;
+    background-color: white;
+    color: #1f2937;
+}
+/* CSS */
+.project-cards {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+.card {
+    border: 1px solid blue; /* Debug: verifica las tarjetas */
+    padding: 1rem;
+}
+/* aun no listo
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+*/
+.card h3 {
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #6b7280;
+}
+
+.technologies {
+    background-color: #e5e7eb;
+    color: #1f2937;
+    font-family: 'light ilatlic';
+    padding: 1rem;
+}
+
+.tech {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.contact{
+    padding: 3rem 1rem;
+    background-color: white; /* Azul de la guía de estilo */
+    color: white;
+    text-align: center;
+}
+.cta-box {
+    padding: 1rem;
+    background-color: #3882f6;
+    max-width: 1500px;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: white;
+    color: #3882F6;
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin : 1rem;
+    border: 2px solid white;
+}
+.footer-content {
+    text-align: center;
+    padding: 1rem;
+    background-color: #1f2937;
+    color: #f9faf8;
+}
