@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <title>Programathor10 | Portfolio</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <nav>
+          <div class="header-logo">PROGRAMATHOR10</div>
+          <ul>
+            <li><a href="#Tecnologias">Tecnologías</a></li>
+            <li><a href="#Proyectos">Proyectos</a></li>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="hero">
+        <div class="hero-text">
+          <h1>Bruno Coccetta</h1>
+          <p>
+            Backend developer en formación. Trabajo con Python, APIs REST y
+            automatización de procesos.
+          </p>
+        </div>
+      </section>
+
+      <section id="Tecnologias" class="technologies">
+        <h2>Tecnologías que utilizo</h2>
+        <div class="tech">
+          <div class="item"><span>Python</span></div>
+          <div class="item"><span>FastAPI</span></div>
+          <div class="item"><span>SQL</span></div>
+          <div class="item"><span>SQLite</span></div>
+          <div class="item"><span>Pandas</span></div>
+          <div class="item"><span>APIs REST</span></div>
+          <div class="item"><span>Git</span></div>
+          <div class="item"><span>Testing</span></div>
+          <div class="item"><span>Automatización</span></div>
+        </div>
+      </section>
+
+      <section id="Proyectos" class="projects">
+        <h2>Proyectos</h2>
+        <div class="project-cards">
+          <article class="card">
+            <div class="card-image">
+              <img src="assets/img/bot.png" alt="Telegram Bot" />
+            </div>
+            <h3>Bot de turnos – Telegram + Python</h3>
+            <p>
+              Bot de Telegram para gestionar turnos: reserva, consulta y
+              cancelación mediante mensajes naturales. Integra lógica de negocio
+              en Python y persistencia en SQLite.
+            </p>
+            <a href="projects/api-turnos.html" class="card-button">
+              🔗 Ver proyecto
+            </a>
+          </article>
+
+          <article class="card">
+            <div class="card-image">
+              <img src="assets/img/csv-cleaner.png" alt="CSV Cleaner" />
+            </div>
+            <h3>CSV Cleaner – Python + Pandas</h3>
+            <p>
+              Herramienta para limpiar y normalizar archivos CSV: columnas,
+              tipos de datos y duplicados, lista para analítica o reporting.
+            </p>
+            <a href="projects/csv-cleaner.html" class="card-button">
+              🔗 Ver proyecto
+            </a>
+          </article>
+
+          <article class="card">
+            <div class="card-image">
+              <img
+                src="assets/img/exportador.png"
+                alt="Exportador de reportes"
+              />
+            </div>
+            <h3>Exportador de reportes – Python</h3>
+            <p>
+              Script que automatiza la generación y exportación de reportes a
+              partir de archivos de entrada, reduciendo tareas manuales.
+            </p>
+            <a href="projects/exportador.html" class="card-button">
+              🔗 Ver proyecto
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <section id="sobre-mi" class="about">
+        <h2>Sobre mí</h2>
+        <p>
+          Soy un desarrollador backend en formación especializado en Python.
+          Actualmente trabajo en proyectos reales como una API de turnos y
+          herramientas de automatización con Pandas. Estoy siguiendo una ruta de
+          Backend (FastAPI + SQL + Docker) para obtener mi primer rol trainee.
+        </p>
+      </section>
+      <section id="contacto" class="contact">
+        <div class="cta-box">
+          <h2>¿Tenés un proyecto en mente?</h2>
+          <form
+            class="contact-form"
+            action="https://formsubmit.co/brunojobs@proton.me"
+            method="POST"
+          >
+            <!-- Opcionales pero útiles -->
+            <input
+              type="hidden"
+              name="_subject"
+              value="Nueva consulta desde tu portfolio"
+            />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
+
+            <div class="form-row">
+              <label for="nombre">Nombre</label>
+              <input
+                id="nombre"
+                name="nombre"
+                type="text"
+                required
+                minlength="2"
+                maxlength="80"
+                pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ ]{2,80}"
+                title="Ingresá tu nombre usando solo letras y espacios."
+              />
+            </div>
+
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                required
+                maxlength="120"
+                title="Ingresá un correo válido, por ejemplo nombre@dominio.com"
+              />
+            </div>
+
+            <div class="form-row">
+              <label for="mensaje">Mensaje</label>
+              <textarea
+                id="mensaje"
+                name="mensaje"
+                rows="4"
+                required
+                minlength="10"
+                maxlength="1000"
+                title="Contame brevemente sobre tu proyecto o consulta (mínimo 10 caracteres)."
+              ></textarea>
+            </div>
+
+            <button type="submit" class="cta-button">Enviar mensaje</button>
+          </form>
+        </div>
+      </section>
+
+      <!--
+      <section id="contacto" class="contact">
+        <div class="cta-box">
+          <h2>¿Tenés un proyecto en mente?</h2>
+          <!-- Cambiá ESTE mail por el tuyo real -->
+      <!--<a href="mailito:brunojobs@proton.me" class="cta-button">Contactarme</a>
+          <a
+            href="mailto:brunojobs@proton.me?subject=Consulta%20desde%20tu%20portfolio"
+            class="cta-button"
+          >
+            Contactarme
+          </a>
+        </div>
+      </section> -->
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <p>© 2025 Programathor10. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+  </body>
+</html>

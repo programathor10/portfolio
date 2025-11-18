@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/styles.css" />
+    <title>Bot de turnos | Programathor10</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="header-logo">PROGRAMATHOR10</div>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="../index.html#Proyectos">Proyectos</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="project-page">
+      <section class="project-hero">
+        <h1>Bot de turnos – Telegram + Python</h1>
+        <p>
+          Bot de Telegram para reservar, consultar y cancelar turnos mediante mensajes simples. 
+          Implementado en Python con integración vía webhooks y persistencia en SQLite.
+        </p>
+      </section>
+
+      <section class="project-details">
+        <h2>Características principales</h2>
+        <ul>
+          <li>Reserva de turnos mediante mensajes tipo: “Quiero un turno mañana a las 15”.</li>
+          <li>Consulta de turnos existentes por nombre o fecha.</li>
+          <li>Cancelación de turnos asignados.</li>
+          <li>Confirmaciones automáticas dentro del chat.</li>
+          <li>Manejo de estados e interacción fluida.</li>
+        </ul>
+      </section>
+
+      <section class="project-tech">
+        <h2>Tecnologías utilizadas</h2>
+        <ul>
+          <li>Python</li>
+          <li>Telegram Bot API</li>
+          <li>FastAPI (solo para manejar el webhook)</li>
+          <li>SQLite</li>
+          <li>Uvicorn</li>
+          <li>Git</li>
+        </ul>
+      </section>
+
+      <section class="project-links">
+        <h2>Enlaces</h2>
+        <ul>
+          <li>
+            🔗 <a href="https://github.com/programathor10/turnos-api" target="_blank">
+              Ver repositorio en GitHub
+            </a>
+          </li>
+          <!-- Si después lo deployás:
+          <li>
+            🌐 <a href="https://TU-DEPLOY" target="_blank">Ver bot desplegado</a>
+          </li>
+          -->
+        </ul>
+      </section>
+
+      <section class="project-howto">
+        <h2>Cómo ejecutarlo localmente</h2>
+        <ol>
+          <li>Clonar el repositorio.</li>
+          <li>Instalar dependencias con: <code>pip install -r requirements.txt</code>.</li>
+          <li>Configurar <code>BOT_TOKEN</code> y <code>WEBHOOK_URL</code> en <code>.env</code>.</li>
+          <li>Levantar FastAPI para recibir el webhook:  
+            <br><code>uvicorn main:app --reload</code>
+          </li>
+          <li>Configurar el webhook en Telegram.</li>
+          <li>Interactuar con el bot en el chat.</li>
+        </ol>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <p>© 2025 Programathor10. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+  </body>
+</html>

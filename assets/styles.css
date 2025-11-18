@@ -1,0 +1,424 @@
+/* --------------------- */
+/* RESET & BASE */
+/* --------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", Arial, sans-serif;
+}
+
+body {
+  background: #1a1a1a; /* fondo elegante */
+  color: #e5e5e5;
+  line-height: 1.6;
+}
+
+/* --------------------- */
+/* NAVBAR */
+/* --------------------- */
+header {
+  background: #111; /* más profesional */
+  padding: 15px 40px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  font-weight: 800;
+  font-size: 1.3rem;
+  color: #c084fc; /* violeta claro */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ddd;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+nav ul li a:hover {
+  color: #c084fc;
+}
+
+/* --------------------- */
+/* HERO */
+/* --------------------- */
+.hero {
+  height: 45vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #4c1d95, #6d28d9);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 650px;
+  margin: auto;
+}
+
+/* --------------------- */
+/* TECNOLOGÍAS */
+/* --------------------- */
+.technologies {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.technologies h2 {
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+  color: #fff;
+}
+
+.tech {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.tech .item {
+  background: #111;
+  padding: 10px 18px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+  font-weight: 600;
+  color: #e5e5e5;
+  transition: 0.2s;
+}
+
+.tech .item:hover {
+  background: #4c1d95;
+  color: white;
+}
+
+/* --------------------- */
+/* PROYECTOS */
+/* --------------------- */
+
+.projects {
+  padding: 70px 40px;
+  text-align: center;
+}
+
+.projects h2 {
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+  color: white;
+}
+
+.project-cards {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 35px;
+  margin-top: 25px;
+}
+
+.card {
+  background: #111;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  text-align: left;
+  transition: 0.25s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+/* 👇 ESTA ES LA PARTE IMPORTANTE */
+
+.card-image {
+  width: 100%;
+  height: 150px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* --------------------- */
+/* SOBRE MÍ */
+/* --------------------- */
+#sobre-mi {
+  padding: 60px 40px;
+  background: #222;
+  max-width: 900px;
+  margin: 50px auto;
+  font-size: 1.2rem;
+  border-radius: 12px;
+  color: #e5e5e5;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+#sobre-mi h2 {
+  margin-bottom: 15px;
+  font-size: 2rem;
+  color: #fff;
+}
+
+/* --------------------- */
+/* CONTACTO */
+/* --------------------- */
+.contact {
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.cta-box {
+  background: #4c1d95;
+  padding: 50px;
+  border-radius: 15px;
+  color: white;
+  max-width: 650px;
+  margin: auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 20px;
+  background: white;
+  color: #4c1d95;
+  padding: 14px 24px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.2s;
+}
+
+.cta-button:hover {
+  background: #f0e9ff;
+}
+/* FORMULARIO DE CONTACTO DENTRO DE CTA-BOX */
+
+.contact-form {
+    margin-top: 25px;
+    text-align: left;
+  }
+  
+  .form-row {
+    margin-bottom: 15px;
+  }
+  
+  .form-row label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #f4f4f4;
+  }
+  
+  .form-row input,
+  .form-row textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 0.95rem;
+    background: #2b0b63;
+    color: #f4f4f4;
+  }
+  
+  .form-row input::placeholder,
+  .form-row textarea::placeholder {
+    color: #c4b5fd;
+  }
+  
+  .form-row input:focus,
+  .form-row textarea:focus {
+    box-shadow: 0 0 0 2px #c084fc;
+  }
+  
+  .contact .cta-button {
+    margin-top: 10px;
+  }
+  
+  .form-row input:invalid,
+.form-row textarea:invalid {
+  box-shadow: 0 0 0 2px #f97373;
+}
+
+.form-row input:valid,
+.form-row textarea:valid {
+  box-shadow: 0 0 0 2px #22c55e;
+}
+
+
+/* --------------------- */
+/* FOOTER */
+/* --------------------- */
+footer {
+  margin-top: 50px;
+  background: #111;
+  color: #bbb;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+}
+
+.footer-content p {
+  margin: 0;
+}
+
+/* --------------------- */
+/* RESPONSIVE */
+/* --------------------- */
+@media (max-width: 768px) {
+  nav ul {
+    gap: 12px;
+  }
+
+  .hero h1 {
+    font-size: 2.3rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .project-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-box {
+    padding: 35px;
+  }
+}
+
+/* --------------------- */
+/* PÁGINAS DE PROYECTO */
+/* --------------------- */
+
+.project-page {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
+  color: #e5e5e5;
+}
+
+/* HERO DEL PROYECTO */
+.project-hero {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.project-hero h1 {
+  font-size: 2.4rem;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.project-hero p {
+  font-size: 1.1rem;
+  color: #cccccc;
+  line-height: 1.6;
+}
+
+/* SECCIONES */
+.project-details,
+.project-tech,
+.project-links,
+.project-howto {
+  background: #111;
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 35px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+}
+
+.project-details h2,
+.project-tech h2,
+.project-links h2,
+.project-howto h2 {
+  font-size: 1.6rem;
+  color: #c084fc;
+  margin-bottom: 15px;
+}
+
+.project-details ul,
+.project-tech ul,
+.project-links ul,
+.project-howto ol {
+  margin-left: 20px;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+.project-details ul li,
+.project-tech ul li,
+.project-links ul li,
+.project-howto ol li {
+  margin-bottom: 10px;
+}
+
+/* ENLACES */
+.project-links a {
+  color: #c084fc;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.project-links a:hover {
+  color: #e9d5ff;
+  text-decoration: underline;
+}
+
+/* CÓDIGO */
+.project-howto code {
+  background: #222;
+  padding: 4px 6px;
+  border-radius: 6px;
+  color: #d8b4fe;
+  font-family: "Fira Code", monospace;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .project-page {
+    margin: 30px auto;
+  }
+
+  .project-hero h1 {
+    font-size: 2rem;
+  }
+
+  .project-hero p {
+    font-size: 1rem;
+  }
+}
