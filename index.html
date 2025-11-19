@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/styles.css" />
     <title>Programathor10 | Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio de Bruno Coccetta (Programathor10), backend developer en formación con foco en Python, FastAPI, SQL y automatización de procesos."
+    />
   </head>
   <body>
     <main>
@@ -20,18 +24,38 @@
         </nav>
       </header>
 
+      <!-- HERO -->
       <section class="hero">
         <div class="hero-text">
           <h1>Bruno Coccetta</h1>
           <p>
             Backend developer en formación. Trabajo con Python, APIs REST y
-            automatización de procesos.
+            automatización de procesos. Busco mi primer rol trainee/junior
+            backend.
           </p>
+
+          <div class="hero-buttons">
+            <a href="#Proyectos" class="btn-primary">Ver proyectos</a>
+            <a
+              href="assets/cv/Bruno_Coccetta.pdf"
+              class="btn-secondary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Descargar CV
+            </a>
+          </div>
         </div>
       </section>
 
+      <!-- TECNOLOGÍAS -->
       <section id="Tecnologias" class="technologies">
         <h2>Tecnologías que utilizo</h2>
+        <p class="tech-intro">
+          Me enfoco en el ecosistema de Python para backend y automatización:
+          APIs REST, manejo de datos y buenas prácticas como testing y control
+          de versiones.
+        </p>
         <div class="tech">
           <div class="item"><span>Python</span></div>
           <div class="item"><span>FastAPI</span></div>
@@ -45,12 +69,14 @@
         </div>
       </section>
 
+      <!-- PROYECTOS -->
       <section id="Proyectos" class="projects">
         <h2>Proyectos</h2>
         <div class="project-cards">
+          <!-- Bot de turnos -->
           <article class="card">
             <div class="card-image">
-              <img src="assets/img/bot.png" alt="Telegram Bot" />
+              <img src="assets/img/bot.png" alt="Telegram Bot para turnos" />
             </div>
             <h3>Bot de turnos – Telegram + Python</h3>
             <p>
@@ -58,11 +84,26 @@
               cancelación mediante mensajes naturales. Integra lógica de negocio
               en Python y persistencia en SQLite.
             </p>
+
+            <h4>¿Qué problema resuelve?</h4>
+            <ul>
+              <li>Evita coordinar turnos a mano por WhatsApp o llamadas.</li>
+              <li>
+                Centraliza reservas y cancelaciones en un solo canal
+                automatizado.
+              </li>
+              <li>
+                Es adaptable a barberías, gimnasios, consultorios y otros
+                servicios con agenda.
+              </li>
+            </ul>
+
             <a href="projects/api-turnos.html" class="card-button">
               🔗 Ver proyecto
             </a>
           </article>
 
+          <!-- CSV Cleaner -->
           <article class="card">
             <div class="card-image">
               <img src="assets/img/csv-cleaner.png" alt="CSV Cleaner" />
@@ -72,16 +113,30 @@
               Herramienta para limpiar y normalizar archivos CSV: columnas,
               tipos de datos y duplicados, lista para analítica o reporting.
             </p>
+
+            <h4>¿Qué problema resuelve?</h4>
+            <ul>
+              <li>Reduce el tiempo de limpieza manual de datos en Excel.</li>
+              <li>
+                Deja los datos listos para usarlos en análisis o dashboards.
+              </li>
+              <li>
+                Permite aplicar reglas de limpieza de forma consistente sobre
+                distintos archivos.
+              </li>
+            </ul>
+
             <a href="projects/csv-cleaner.html" class="card-button">
               🔗 Ver proyecto
             </a>
           </article>
 
+          <!-- Exportador de reportes -->
           <article class="card">
             <div class="card-image">
               <img
                 src="assets/img/exportador.png"
-                alt="Exportador de reportes"
+                alt="Script exportador de reportes en Python"
               />
             </div>
             <h3>Exportador de reportes – Python</h3>
@@ -89,6 +144,21 @@
               Script que automatiza la generación y exportación de reportes a
               partir de archivos de entrada, reduciendo tareas manuales.
             </p>
+
+            <h4>¿Qué problema resuelve?</h4>
+            <ul>
+              <li>
+                Reemplaza procesos repetitivos de copiar/pegar en hojas de
+                cálculo.
+              </li>
+              <li>
+                Genera reportes consistentes con un solo comando o ejecución.
+              </li>
+              <li>
+                Disminuye errores humanos en la creación de reportes operativos.
+              </li>
+            </ul>
+
             <a href="projects/exportador.html" class="card-button">
               🔗 Ver proyecto
             </a>
@@ -96,24 +166,36 @@
         </div>
       </section>
 
+      <!-- SOBRE MÍ -->
       <section id="sobre-mi" class="about">
         <h2>Sobre mí</h2>
         <p>
           Soy un desarrollador backend en formación especializado en Python.
           Actualmente trabajo en proyectos reales como una API de turnos y
-          herramientas de automatización con Pandas. Estoy siguiendo una ruta de
-          Backend (FastAPI + SQL + Docker) para obtener mi primer rol trainee.
+          herramientas de automatización con Pandas, aplicando lo que aprendo en
+          FastAPI, SQL y testing.
+        </p>
+        <p>
+          Estoy siguiendo una ruta de Backend (FastAPI + SQL + Docker) para
+          obtener mi primer rol trainee/junior y seguir creciendo dentro de un
+          equipo de desarrollo.
         </p>
       </section>
+
+      <!-- CONTACTO -->
       <section id="contacto" class="contact">
         <div class="cta-box">
           <h2>¿Tenés un proyecto en mente?</h2>
+          <p>
+            Podés escribirme usando este formulario. Recibiré tu mensaje
+            directamente por correo.
+          </p>
           <form
             class="contact-form"
             action="https://formsubmit.co/brunojobs@proton.me"
             method="POST"
           >
-            <!-- Opcionales pero útiles -->
+            <!-- Config extra de FormSubmit -->
             <input
               type="hidden"
               name="_subject"
@@ -163,23 +245,40 @@
 
             <button type="submit" class="cta-button">Enviar mensaje</button>
           </form>
+
+          <div class="contact-links">
+            <p>También podés encontrarme en:</p>
+            <ul>
+              <li>
+                <a
+                  href="mailto:brunojobs@proton.me"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >brunojobs@proton.me</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/programathor10"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub: programathor10</a
+                >
+              </li>
+              <!-- Si tenés LinkedIn, sumalo acá -->
+              <!--
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/tu-usuario"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >LinkedIn</a>
+              </li>
+              -->
+            </ul>
+          </div>
         </div>
       </section>
-
-      <!--
-      <section id="contacto" class="contact">
-        <div class="cta-box">
-          <h2>¿Tenés un proyecto en mente?</h2>
-          <!-- Cambiá ESTE mail por el tuyo real -->
-      <!--<a href="mailito:brunojobs@proton.me" class="cta-button">Contactarme</a>
-          <a
-            href="mailto:brunojobs@proton.me?subject=Consulta%20desde%20tu%20portfolio"
-            class="cta-button"
-          >
-            Contactarme
-          </a>
-        </div>
-      </section> -->
     </main>
 
     <footer>

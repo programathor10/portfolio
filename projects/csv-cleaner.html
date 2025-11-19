@@ -18,38 +18,64 @@
     </header>
 
     <main class="project-page">
+      <!-- HERO -->
       <section class="project-hero">
         <h1>CSV Cleaner – Python + Pandas</h1>
         <p>
           Herramienta de línea de comandos para limpiar y normalizar archivos
-          CSV antes de analizarlos o generar reportes.
+          CSV antes de analizarlos o generar reportes. Automatiza tareas
+          repetitivas de limpieza de datos que suelen hacerse a mano en Excel.
         </p>
       </section>
 
+      <!-- DETALLES / PROBLEMA QUE RESUELVE -->
       <section class="project-details">
+        <h2>¿Qué problema resuelve?</h2>
+        <ul>
+          <li>
+            Reduce el tiempo dedicado a limpiar datos “a mano” en hojas de
+            cálculo.
+          </li>
+          <li>
+            Evita errores humanos al aplicar siempre las mismas reglas de
+            limpieza.
+          </li>
+          <li>
+            Deja los datos listos para cargarlos en otros sistemas, hacer
+            análisis o armar dashboards.
+          </li>
+          <li>
+            Se puede reutilizar sobre distintos archivos con un flujo de
+            ejecución simple.
+          </li>
+        </ul>
+
         <h2>Características principales</h2>
         <ul>
           <li>Normalización de nombres de columnas.</li>
           <li>Conversión de tipos de datos (números, fechas, etc.).</li>
-          <li>Eliminación de duplicados.</li>
-          <li>Eliminación de columnas vacías.</li>
+          <li>Eliminación de filas duplicadas.</li>
+          <li>Eliminación de columnas vacías o irrelevantes.</li>
           <li>
-            Configuración flexible a través de parámetros o archivo de config.
+            Posibilidad de ajustar el comportamiento mediante parámetros o
+            configuración.
           </li>
           <li>Tests automatizados para validar el comportamiento.</li>
         </ul>
       </section>
 
+      <!-- TECNOLOGÍAS -->
       <section class="project-tech">
         <h2>Tecnologías utilizadas</h2>
         <ul>
           <li>Python</li>
           <li>Pandas</li>
-          <li>Pytest</li>
-          <li>Git</li>
+          <li>Pytest (tests automatizados)</li>
+          <li>Git / GitHub</li>
         </ul>
       </section>
 
+      <!-- ENLACES -->
       <section class="project-links">
         <h2>Enlaces</h2>
         <ul>
@@ -58,6 +84,7 @@
             <a
               href="https://github.com/programathor10/csv_cleaner"
               target="_blank"
+              rel="noopener noreferrer"
             >
               Ver repositorio en GitHub
             </a>
@@ -66,14 +93,20 @@
         </ul>
       </section>
 
+      <!-- CÓMO EJECUTARLO -->
       <section class="project-howto">
         <h2>Cómo ejecutarlo localmente</h2>
         <ol>
-          <li>Clonar el repositorio.</li>
-          <li>Crear y activar un entorno virtual.</li>
           <li>
-            Instalar dependencias con
-            <code>pip install -r requirements.txt</code>.
+            Clonar el repositorio:<br />
+            <code
+              >git clone https://github.com/programathor10/csv_cleaner.git</code
+            >
+          </li>
+          <li>Crear y activar un entorno virtual (recomendado).</li>
+          <li>
+            Instalar dependencias:<br />
+            <code>pip install -r requirements.txt</code>
           </li>
           <li>
             Ejecutar el script pasando el CSV de entrada y el de salida, por
@@ -82,7 +115,10 @@
               >python main.py --input data.csv --output data_limpio.csv</code
             >
           </li>
-          <li>Opcional: correr los tests con <code>pytest</code>.</li>
+          <li>
+            Opcional: correr los tests automatizados con:<br />
+            <code>pytest</code>
+          </li>
         </ol>
       </section>
     </main>

@@ -59,15 +59,19 @@ nav ul li a:hover {
 /* HERO */
 /* --------------------- */
 .hero {
-  height: 45vh;
+  min-height: 45vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background: linear-gradient(135deg, #4c1d95, #6d28d9);
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 40px 20px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+.hero-text {
+  max-width: 700px;
 }
 
 .hero h1 {
@@ -78,7 +82,48 @@ nav ul li a:hover {
 .hero p {
   font-size: 1.2rem;
   max-width: 650px;
-  margin: auto;
+  margin: 0 auto;
+}
+
+/* Botones del hero */
+.hero-buttons {
+  margin-top: 22px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.btn-primary,
+.btn-secondary {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.95rem;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-primary {
+  background: #fbbf24; /* dorado suave */
+  color: #111827;
+}
+
+.btn-primary:hover {
+  background: #fde68a;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #ffffff;
+  border-color: #e5e7eb;
+}
+
+.btn-secondary:hover {
+  background: rgba(17, 24, 39, 0.2);
 }
 
 /* --------------------- */
@@ -91,8 +136,15 @@ nav ul li a:hover {
 
 .technologies h2 {
   font-size: 2.2rem;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   color: #fff;
+}
+
+.tech-intro {
+  max-width: 700px;
+  margin: 0 auto 25px auto;
+  font-size: 1rem;
+  color: #d4d4d8;
 }
 
 .tech {
@@ -154,8 +206,37 @@ nav ul li a:hover {
   transform: translateY(-6px);
 }
 
-/* 👇 ESTA ES LA PARTE IMPORTANTE */
+.card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #f9fafb;
+}
 
+.card p {
+  font-size: 0.98rem;
+  color: #d4d4d8;
+}
+
+/* Subtítulos y listas dentro de las cards */
+.card h4 {
+  margin-top: 15px;
+  margin-bottom: 8px;
+  font-size: 1rem;
+  color: #c084fc;
+}
+
+.card ul {
+  padding-left: 18px;
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+  color: #e5e5e5;
+}
+
+.card ul li {
+  margin-bottom: 6px;
+}
+
+/* Imagen de la card */
 .card-image {
   width: 100%;
   height: 150px;
@@ -171,6 +252,24 @@ nav ul li a:hover {
   display: block;
 }
 
+/* Botón de la card */
+.card-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: #4c1d95;
+  color: #f9fafb;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: 0.2s;
+}
+
+.card-button:hover {
+  background: #6d28d9;
+}
+
 /* --------------------- */
 /* SOBRE MÍ */
 /* --------------------- */
@@ -179,7 +278,7 @@ nav ul li a:hover {
   background: #222;
   max-width: 900px;
   margin: 50px auto;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   border-radius: 12px;
   color: #e5e5e5;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
@@ -190,6 +289,10 @@ nav ul li a:hover {
   margin-bottom: 15px;
   font-size: 2rem;
   color: #fff;
+}
+
+#sobre-mi p + p {
+  margin-top: 10px;
 }
 
 /* --------------------- */
@@ -210,6 +313,16 @@ nav ul li a:hover {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
+.cta-box h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.cta-box p {
+  font-size: 0.98rem;
+}
+
+/* Botón principal de contacto (submit) */
 .cta-button {
   display: inline-block;
   margin-top: 20px;
@@ -220,56 +333,59 @@ nav ul li a:hover {
   text-decoration: none;
   font-weight: 700;
   transition: 0.2s;
+  border: none;
 }
 
 .cta-button:hover {
   background: #f0e9ff;
+  cursor: pointer;
 }
-/* FORMULARIO DE CONTACTO DENTRO DE CTA-BOX */
 
+/* FORMULARIO DE CONTACTO DENTRO DE CTA-BOX */
 .contact-form {
-    margin-top: 25px;
-    text-align: left;
-  }
-  
-  .form-row {
-    margin-bottom: 15px;
-  }
-  
-  .form-row label {
-    display: block;
-    margin-bottom: 6px;
-    font-weight: 600;
-    color: #f4f4f4;
-  }
-  
-  .form-row input,
-  .form-row textarea {
-    width: 100%;
-    padding: 10px 12px;
-    border-radius: 8px;
-    border: none;
-    outline: none;
-    font-size: 0.95rem;
-    background: #2b0b63;
-    color: #f4f4f4;
-  }
-  
-  .form-row input::placeholder,
-  .form-row textarea::placeholder {
-    color: #c4b5fd;
-  }
-  
-  .form-row input:focus,
-  .form-row textarea:focus {
-    box-shadow: 0 0 0 2px #c084fc;
-  }
-  
-  .contact .cta-button {
-    margin-top: 10px;
-  }
-  
-  .form-row input:invalid,
+  margin-top: 25px;
+  text-align: left;
+}
+
+.form-row {
+  margin-bottom: 15px;
+}
+
+.form-row label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #f4f4f4;
+}
+
+.form-row input,
+.form-row textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 0.95rem;
+  background: #2b0b63;
+  color: #f4f4f4;
+}
+
+.form-row input::placeholder,
+.form-row textarea::placeholder {
+  color: #c4b5fd;
+}
+
+.form-row input:focus,
+.form-row textarea:focus {
+  box-shadow: 0 0 0 2px #c084fc;
+}
+
+.contact .cta-button {
+  margin-top: 10px;
+}
+
+/* Valid/invalid */
+.form-row input:invalid,
 .form-row textarea:invalid {
   box-shadow: 0 0 0 2px #f97373;
 }
@@ -279,6 +395,35 @@ nav ul li a:hover {
   box-shadow: 0 0 0 2px #22c55e;
 }
 
+/* Links de contacto extra */
+.contact-links {
+  margin-top: 25px;
+  text-align: left;
+}
+
+.contact-links p {
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.contact-links ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.contact-links li {
+  margin-bottom: 6px;
+}
+
+.contact-links a {
+  color: #f9fafb;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.contact-links a:hover {
+  text-decoration: underline;
+}
 
 /* --------------------- */
 /* FOOTER */
@@ -300,8 +445,17 @@ footer {
 /* RESPONSIVE */
 /* --------------------- */
 @media (max-width: 768px) {
+  header {
+    padding: 12px 20px;
+  }
+
   nav ul {
     gap: 12px;
+    font-size: 0.9rem;
+  }
+
+  .hero {
+    padding: 35px 16px;
   }
 
   .hero h1 {
@@ -312,12 +466,31 @@ footer {
     font-size: 1rem;
   }
 
+  .hero-buttons {
+    gap: 10px;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    max-width: 260px;
+  }
+
+  .projects {
+    padding: 50px 20px;
+  }
+
   .project-cards {
     grid-template-columns: 1fr;
   }
 
   .cta-box {
-    padding: 35px;
+    padding: 35px 20px;
+  }
+
+  #sobre-mi {
+    margin: 30px 20px;
+    padding: 40px 20px;
   }
 }
 

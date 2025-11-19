@@ -18,37 +18,64 @@
     </header>
 
     <main class="project-page">
+      <!-- HERO -->
       <section class="project-hero">
         <h1>Exportador de reportes – Python</h1>
         <p>
           Script que automatiza la generación y exportación de reportes a partir
-          de archivos de entrada (por ejemplo, Excel o CSV), reduciendo tareas
-          manuales.
+          de archivos de entrada (CSV/Excel). Reduce tareas manuales repetitivas
+          y estandariza la forma en la que se generan informes.
         </p>
       </section>
 
+      <!-- DETALLES / PROBLEMA QUE RESUELVE -->
       <section class="project-details">
+        <h2>¿Qué problema resuelve?</h2>
+        <ul>
+          <li>
+            Evita tener que copiar, pegar y filtrar datos manualmente en Excel
+            para generar reportes.
+          </li>
+          <li>
+            Asegura que todos los reportes sigan el mismo formato y reglas de
+            negocio.
+          </li>
+          <li>Reduce errores humanos al automatizar pasos repetitivos.</li>
+          <li>Permite crear reportes de forma rápida con un solo comando.</li>
+          <li>
+            Es ideal para tareas operativas de logística, administración,
+            ventas, inventarios, etc.
+          </li>
+        </ul>
+
         <h2>Características principales</h2>
         <ul>
-          <li>Lectura de archivos de entrada (ej. CSV/Excel).</li>
-          <li>Procesamiento y filtrado de datos según criterios definidos.</li>
+          <li>Lectura de archivos de entrada (CSV/Excel).</li>
+          <li>
+            Procesamiento y filtrado de datos según criterios de negocio
+            configurables.
+          </li>
           <li>Generación de reportes listos para compartir.</li>
-          <li>Estructura de proyecto organizada y preparada para crecer.</li>
-          <li>Incluye tests básicos y configuración de CI (GitHub Actions).</li>
+          <li>
+            Estructura de proyecto organizada y pensada para ser escalada.
+          </li>
+          <li>Incluye tests básicos y CI usando GitHub Actions.</li>
         </ul>
       </section>
 
+      <!-- TECNOLOGÍAS -->
       <section class="project-tech">
         <h2>Tecnologías utilizadas</h2>
         <ul>
           <li>Python</li>
           <li>Pandas</li>
-          <li>OpenPyXL / similares (si aplica)</li>
+          <li>OpenPyXL (para exportación en Excel)</li>
           <li>Pytest</li>
-          <li>GitHub Actions (CI)</li>
+          <li>GitHub Actions (CI/CD)</li>
         </ul>
       </section>
 
+      <!-- ENLACES -->
       <section class="project-links">
         <h2>Enlaces</h2>
         <ul>
@@ -57,6 +84,7 @@
             <a
               href="https://github.com/programathor10/exportador"
               target="_blank"
+              rel="noopener noreferrer"
             >
               Ver repositorio en GitHub
             </a>
@@ -64,18 +92,32 @@
         </ul>
       </section>
 
+      <!-- EJECUCIÓN -->
       <section class="project-howto">
         <h2>Cómo ejecutarlo localmente</h2>
         <ol>
-          <li>Clonar el repositorio.</li>
-          <li>Crear y activar un entorno virtual.</li>
           <li>
-            Instalar dependencias con
-            <code>pip install -r requirements.txt</code>.
+            Clonar el repositorio:<br />
+            <code
+              >git clone https://github.com/programathor10/exportador.git</code
+            >
+          </li>
+          <li>
+            Crear y activar un entorno virtual (opcional pero recomendado).
+          </li>
+          <li>
+            Instalar dependencias:<br />
+            <code>pip install -r requirements.txt</code>
           </li>
           <li>
             Ejecutar el script de exportación, por ejemplo:<br />
-            <code>python main.py --input data.xlsx --output reporte.xlsx</code>
+            <code
+              >python main.py --input ventas.xlsx --output reporte.xlsx</code
+            >
+          </li>
+          <li>
+            Opcional: correr los tests con:<br />
+            <code>pytest</code>
           </li>
         </ol>
       </section>
